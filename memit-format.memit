@@ -1,0 +1,198 @@
+space #memit
+
+#what_is_a_memit
+  See #syntax
+  See #changelog
+  See #roadmap
+  See #future_proposals
+  See #name
+  See #relations
+  See #principles>minimal
+  See #use_cases
+  See #principles>normalization
+  See #code_of_conduct
+  Is #rolling-release
+
+  #memit's form a network of things which are worth giving a name and to be remembered.
+  They can easily be turned into documents and written and read by humans. Use
+  existing simple text editors to edit, use text search tools to find references.
+
+  learning
+  training
+  judging
+  certifications
+
+  AI and more
+
+    Related companies:
+    - video platform
+    - training platform
+    - imimi
+    - ....
+
+#changelog
+
+#roadmap
+  Write a lanugage server and vsode support?
+
+  Turn this mess into 'just enough structure' to have it machine readable.
+  But because we're not done yet its too early
+
+#future_proposals
+  Allow attributes to be stored so that compiler languages pcs mobile phones
+  can be compared ?
+
+#code_of_conduct
+  See #science>scientific_process
+
+  We want to be loving, appreciating but also accepting. Meaning we accept science and truth.
+  And part of that is that some science topics like health are controversal and complicated.
+
+#name
+  See #space
+  See #tags
+
+  Exmaples:
+    ##this
+    ##context>topic
+    ##tag#tag
+    ##context>topic#foo>bar
+
+#space
+  See #principles>namespaces
+
+  So we allow #a>b to mean b belongs to a and we allow to enter such space ##a
+  by using space ##spacename without having to repeat ##a all the time
+
+  You can use using ##spacename to import a namespace.
+
+  Eg using ##theory allows to use ##world_creation>matrix without #theory prefix
+
+#tags
+  Problem is that top down relationships as in #spaces don't always work.
+  So we allow #a#b#c meaning #a#b#c as combination should be some information attached
+
+  Eg #programming>macro is implemented by many languages.
+  So #Haskell>macro would be related automatically ?
+
+#use_cases
+  Documentation
+  ..
+
+#syntax
+  See #relations
+  See #memit_code_blocks
+  See #memit_media
+  See #space
+  See #roadmap
+  See #scoping
+
+  Memit's syntax focuses on being done.
+  Thus right now it's text. But we have some special keywords
+
+  Use # two times to mean literal #
+
+  Use [a=7 b="a b"] for attributes
+
+  We add more precise reationships than See later
+
+  Maybe we need formatting blocks like this
+
+  TODO: tabs or spaces? For now 2 spaces
+
+
+
+#nesting
+  TODO: Allow nesting ?
+
+  Nesting can be entered by
+
+  space keyword
+
+  by using 2 more spaces
+
+  space: #X
+
+  enter nesting #X
+
+  #foo
+
+    #bar
+
+      #baz
+
+
+#scoping
+  replaced-by: #nesting
+  is: #proposal
+  Not yet implemented
+  Maybe we need scopes to easy typing.
+  Like ##linux_kernel_XX
+  So linux_kernel should be a scope
+
+ See #memit>scoping
+
+#relation>See:
+  Referencing related maybe included concept
+  Most important references should be put first
+
+#relation>alias-for:
+  See #rolling-release
+
+  If you need stable names to refer to, create your own aliases
+
+#relation>is:
+  eg  is: #proposal
+
+#relation>balancing
+  See #gradually
+  See #balancing_conflicting_features
+
+  #abc_vs_#foo_vs_#bar
+
+  means some extremes need to be balanced
+  And this #abc_vs_#foo_vs_#bar is a keyword itself
+  Cause it's something you can attach information to.
+
+  ___ might be replaced but it works for Vim editor for now with completions
+
+#memit_relations
+  See #relation>alias-for
+  See #relation>is
+  See #relation>See
+  See #relation>balancing
+
+
+  To represent relations between #memit we use special words like
+
+  ##link is always a link to a topic
+
+  Maybe:
+    teaches: If you understand this you also understand the referenced #memit
+    offers: Eg see #vscode offering #vim_keybindings
+    missing:
+    cudos:
+    works-with: ..
+    solution/solves: .. If something is a problem that tag might be a solution
+    case-of: #identifier
+    is-problem: shortcut for case-of #problem
+    use-case:
+    could-be-implemented-by: ..
+    See: #identifier
+    See: #identifier vs #bar vs #x (nicer way to read)
+    .. blah..
+
+#memit_code_blocks
+  ##code_start[php]
+  ##code_end
+
+#memit_media
+  ##media[title=..]:path/url
+
+  reference images or videos
+  paths can refer to internet or relative to text file
+
+  content types tables, images, videos, Excel, ... ?
+
+#let_community_rate_this
+  Find away to order /rate stuff like ##videos
